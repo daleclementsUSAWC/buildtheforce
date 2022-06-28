@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col">
+        <h2 class="text-center text-uppercase text-primary montserrat">Key Rules and Terms</h2>
+        <hr />
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <h3 class="text-center text-uppercase montserrat text-primary">Rules</h3>
+        <div ng-repeat="r in rules">
+            <p><span class="font-weight-bold text-success">{{r.name}}</span>: {{r.text}}</p>
+        </div>
+        <hr />
+    </div>
+    <div class="col-12">
+        <h3 class="text-center text-uppercase montserrat text-primary">Terms</h3>
+        <p><span class="font-weight-bold text-success">How Net Power is Calculated</span>: (AC + RC Total
+            Power)*(Readiness Factor)*(Sustainment Factor)*(Technology Factor)*(Shortfall Penalty).
+        </p>
+        <p><span class="font-weight-bold text-success">Power Ratio</span>: Your Army's total net power (off. + def.)
+            divided by crisis total power (off. + def.).
+        </p>
+        <p><span class="font-weight-bold text-success">Total Power</span>: Active Component (AC) + Reserve Component
+            (RC) power (off. and/or def.)
+        </p>
+        <p><span class="font-weight-bold text-success">RC Power</span>: (RC total) * (RC Capability Factor).
+        </p>
+        <p><span class="font-weight-bold text-success">Readiness Factor</span>: Your overall % funding for MILCON,
+            MILPERS, O&M, and Procurement.
+        </p>
+        <p><span class="font-weight-bold text-success">Sustainment Factor</span>: Your Army's total enabler capability
+            (AC + (RC * RC Capability Factor)) divided by the total enabler requirement (Army total + any additional
+            from crisis).
+        </p>
+        <p><span class="font-weight-bold text-success">Technology Factor</span>: Based on whether your technology level
+            is higher or lower than crisis level.
+        </p>
+        <p><span class="font-weight-bold text-success">Shortfall Penalty</span>: Reduce your net power by 50% (multiply
+            total power by 0.50) if you do not have both types of crisis priority forces or your combined qty of these
+            forces < (round # + crisis tech lvl). </p>
+
+    </div>
+    <div class="col-12">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th colspan="12" class="text-center text-danger">Readiness Outcome Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>% Funded</th>
+                    <td>0%</td>
+                    <td>10%</td>
+                    <td>20%</td>
+                    <td>30%</td>
+                    <td>40%</td>
+                    <td>50%</td>
+                    <td>60%</td>
+                    <td>70%</td>
+                    <td>80%</td>
+                    <td>90%</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <th>Min. 2d6 Roll</th>
+                    <td>12</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>10</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

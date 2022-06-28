@@ -15,7 +15,7 @@
             function () {
                 common.$timeout(function () {
                     vm.spinner = false; $("body").removeClass("loadingContent");
-                }, 700);
+                }, 1500);
             }
         );
 
@@ -34,6 +34,6 @@
         $rootScope.$on('spinnerOn',
             function () { vm.spinner = true; $("body").addClass("loadingContent"); }
         );
-        
+
     };
 })();

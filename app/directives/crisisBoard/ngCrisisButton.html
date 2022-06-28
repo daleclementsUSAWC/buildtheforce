@@ -1,0 +1,20 @@
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#crisisModal"
+        ng-click="board = 'Crisis'">Crisis</button>
+    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#crisisModal"
+        ng-click="board = 'Political'">Political</button>
+    <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#crisisModal"
+        ng-click="board = 'Readiness'">Readiness</button>
+</div>
+
+
+<!-- Crisis Board Modal -->
+<div class="modal fade" id="crisisModal" tabindex="-1" aria-labelledby="crisisModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <ng-crisis board-select="{{board}}"></ng-crisis>
+            </div>
+        </div>
+    </div>
+</div>

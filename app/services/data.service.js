@@ -24,11 +24,8 @@
                 }
                 return "cookies cleared";
             },
-            //getSingle: function (route, id) {return $http.get('Covid19/api/' + route + '/' + id);},
-            //getByQuery: function (route, query) { return $http.get('Covid19/api/' + route + query);},
-            //insert: function (route, data) { return $http.post('Covid19/api/' + route, data, config); },
-            //update: function (route, id, data) { return $http.post('Covid19/api/' + route + '/' + id, data, config); },
-            AmazonSendMail: function (data) { return $http.post("api/AmazonSendMail", data, config); },
+
+            getRules: function () { return $http.get('https://api.sheety.co/5f72d14f597c265145ff6205bfa7baae/buildTheForce/rules', config) },
         }
     }
 })();

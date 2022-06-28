@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col">
+        <h2 class="text-center text-uppercase montserrat">{{board == 'Crisis' ? board: board + ' Events'}} Board</h2>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-4 mb-5" ng-repeat="e in events | orderBy: 'order'">
+        <div class="text-center">
+            <button class="btn btn-primary">{{likeliness(e)}}</button>
+        </div>
+
+
+        <table class="table table-bordered table-sm mt-2">
+            <thead>
+                <tr>
+                    <th class="table-dark text-center" colspan="4">
+                        {{e.name}}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <th>I</th>
+                    <th>II</th>
+                    <th>III</th>
+                </tr>
+                <tr>
+                    <th>Offense</th>
+                    <td>{{e.offense[0]}}</td>
+                    <td>{{e.offense[1]}}</td>
+                    <td>{{e.offense[2]}}</td>
+                </tr>
+                <tr>
+                    <th>Defense</th>
+                    <td>{{e.defense[0]}}</td>
+                    <td>{{e.defense[1]}}</td>
+                    <td>{{e.defense[2]}}</td>
+                </tr>
+                <tr>
+                    <th>Additional Enablers</th>
+                    <td>{{e.additionalEnablers[0]}}</td>
+                    <td>{{e.additionalEnablers[1]}}</td>
+                    <td>{{e.additionalEnablers[2]}}</td>
+                </tr>
+                <tr>
+                    <th>Tech Level</th>
+                    <td>{{e.techLevel[0]}}</td>
+                    <td>{{e.techLevel[1]}}</td>
+                    <td>{{e.techLevel[2]}}</td>
+                </tr>
+                <tr>
+                    <th colspan="4">
+                        Priority Forces: <span ng-repeat="pf in e.priorityForces">{{pf}}<span ng-if="!$last">,</span>
+                        </span>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-center">
+                        <img height="80px;" ng-src="content/img/{{e.img}}.png">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

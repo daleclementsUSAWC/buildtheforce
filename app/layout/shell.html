@@ -1,14 +1,10 @@
 ﻿<div ng-controller="shell as vm">
     <div class="loading" ng-show="vm.spinner" ng-init="vm.spinner = true">
-        <div class="loader">Loading...</div>
+        <div class="text-center">
+            <img class="animated fadeIn mw-100" src="Content/img/splash.png" />
+        </div>
     </div>
-    <div class="siteheader">
-        
+    <div class="container-fluid">
+        <ng-view></ng-view>
     </div>
-    <div ng-view></div>
 </div>
-
-
-
-
-
