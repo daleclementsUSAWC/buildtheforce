@@ -1,9 +1,11 @@
+<!--Round Label-->
 <div class="row">
     <div class="col-12 bg-dark">
         <h3 class="text-center pt-2 text-white-50">Round {{round}}</h3>
     </div>
 </div>
 
+<!--Build the Force (Phase 1) Header-->
 <div class="row">
     <div class="col-12 bg-success">
         <h3 class="text-center pt-2 text-white-50">Build the Force (Phase 1)</h3>
@@ -11,6 +13,7 @@
 </div>
 
 <div class="row">
+    <!--Step 1: Select Research and Development-->
     <div class="col">
         <table class="table table-bordered table-sm">
             <tr>
@@ -42,6 +45,7 @@
         </table>
     </div>
 
+    <!--Step 2: Set Readiness Funding-->
     <div class="col">
         <table class="table table-bordered table-sm">
             <tr>
@@ -105,6 +109,7 @@
 </div>
 
 <div class="row">
+    <!--Info: Force Capabilities Table-->
     <div class="col">
         <table class="table table-bordered table-sm">
             <tr>
@@ -195,6 +200,8 @@
             </tr>
         </table>
     </div>
+
+    <!--Info: Maximum Capabilities for Selected Forces-->
     <div class="col">
         <table class="table table-bordered table-sm">
             <tr>
@@ -280,15 +287,59 @@
             </tr>
         </table>
     </div>
+
+    <!--Step 3: Select Forces-->
     <div class="col">
         <table class="table table-bordered table-sm">
             <tr class="table-warning">
                 <th colspan="2" class="text-center">Step 3: Select Forces</th>
-                <th colspan="3" class="text-center">Step 4: Select Any Force Upgrades</th>
             </tr>
             <tr class="text-center">
                 <th>QTY AC</th>
                 <th>QTY RC</th>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
+                <td class="table-warning"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!--Step 4: Select Any Force Upgrades-->
+    <div class="col">
+        <table class="table table-bordered table-sm">
+            <tr class="table-warning">
+                <th colspan="3" class="text-center">Step 4: Select Any Force Upgrades</th>
+            </tr>
+            <tr class="text-center">
                 <th>+2 Offense</th>
                 <th>+2 Defense</th>
                 <th>-2 Enabler Req</th>
@@ -297,6 +348,9 @@
                 <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
             </tr>
@@ -304,6 +358,9 @@
                 <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
             </tr>
@@ -311,6 +368,9 @@
                 <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
+            </tr>
+            <tr>
+                <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
             </tr>
@@ -318,34 +378,9 @@
                 <td class="table-warning">&nbsp;</td>
                 <td class="table-warning"></td>
                 <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
             </tr>
             <tr>
                 <td class="table-warning">&nbsp;</td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-            </tr>
-            <tr>
-                <td class="table-warning">&nbsp;</td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-            </tr>
-            <tr>
-                <td class="table-warning">&nbsp;</td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
-            </tr>
-            <tr>
-                <td class="table-warning">&nbsp;</td>
-                <td class="table-warning"></td>
-                <td class="table-warning"></td>
                 <td class="table-dark"></td>
                 <td class="table-dark"></td>
             </tr>
@@ -354,5 +389,118 @@
 </div>
 
 <div class="row">
-
+    <!--Info: Estimated Actual Capabilities for Selected Forces-->
+    <div class="col">
+        <table class="table table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th colspan="6" class="table-success text-center">Info: Estimated Actual Capabilities for Selected
+                        Forces (based on
+                        input values for Readiness, Sustainment, and RC Capability)
+                    </th>
+                    <th></th>
+                    <th colspan="4" class="table-success text-center">Info: Costs for Force Upgrades</th>
+                    <th></th>
+                    <th colspan="4" class="table-success text-center">Info: Costs For Selected Forces</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="text-center font-weight-bold">Total</td>
+                    <td class="text-center font-weight-bold">AC</td>
+                    <td class="text-center font-weight-bold">RC</td>
+                    <td colspan="2" class="text-center font-weight-bold">Combined Arms Increases</td>
+                    <td></td>
+                    <td># Upgrades Selected</td>
+                    <td></td>
+                    <td class="table-secondary">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="text-center font-weight-bold">Total</td>
+                    <td class="text-center font-weight-bold">AC</td>
+                    <td class="text-center font-weight-bold">RC</td>
+                </tr>
+                <tr>
+                    <td>Offense</td>
+                    <td class="table-secondary">16.0</td>
+                    <td class="table-secondary">8.0</td>
+                    <td class="table-secondary">8.0</td>
+                    <td>Artillery Support</td>
+                    <td class="table-secondary">0</td>
+                    <td></td>
+                    <td># Units Upgraded</td>
+                    <td></td>
+                    <td class="table-secondary">0</td>
+                    <td></td>
+                    <td></td>
+                    <td>Procurement</td>
+                    <td class="table-secondary">48.0</td>
+                    <td class="table-secondary">24.0</td>
+                    <td class="table-secondary">24.0</td>
+                </tr>
+                <tr>
+                    <td>Defense</td>
+                    <td class="table-secondary">24.0</td>
+                    <td class="table-secondary">12.0</td>
+                    <td class="table-secondary">12.0</td>
+                    <td>Aviation Support</td>
+                    <td class="table-secondary">0</td>
+                    <td></td>
+                    <td>Min Roll for Success</td>
+                    <td></td>
+                    <td class="table-secondary">#N/A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Enabler Capability</td>
+                    <td class="table-secondary">0</td>
+                    <td class="table-secondary">0</td>
+                    <td class="table-secondary">0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Target Cost</td>
+                    <td class="table-secondary">#N/A</td>
+                    <td>Overrun Cost</td>
+                    <td class="table-secondary">#N/A</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Enabler Requirement*</td>
+                    <td class="table-secondary">20</td>
+                    <td class="table-secondary">10</td>
+                    <td class="table-secondary">10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>2d6 Roll</td>
+                    <td class="table-primary">7</td>
+                    <td>Actual Cost</td>
+                    <td class="table-danger">0</td>
+                    <td></td>
+                    <td>Grand Total Cost</td>
+                    <td class="table-danger">48.0</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="13">(total includes additional enablers for selected crisis)</td>
+                    <td colspan="3">(includes forces + R&D upgrades)</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </div>
